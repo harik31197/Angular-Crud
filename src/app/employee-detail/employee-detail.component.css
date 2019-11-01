@@ -1,0 +1,31 @@
+button
+{
+    margin-left:75px;
+    color: black;
+    padding:5px 12px;
+    border-radius: 25px;
+    font: 2em;
+    position: relative;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: beige;
+}
+h2{
+    padding:10px 10px;
+}
+.container
+{
+    padding:10px 10px;
+    width: 250px;
+    background-color: white;
+    border-radius: 35px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.btn
+{
+    padding: 10px 10px;
+}
