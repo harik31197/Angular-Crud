@@ -1,0 +1,12 @@
+<nav>      
+        <a class = "right" routerLink = "/login">Logout</a>
+      </nav>
+      <div class = "body">
+          <h2>Kohli's Devils</h2>
+          <ul class="employees">
+            <li *ngFor = "let employee of employees">
+            <a><span class="badge">{{employee.id}}</span> {{employee.name}}</a>    
+                 
+            </li>
+          </ul>
+        </div>
