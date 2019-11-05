@@ -9,6 +9,10 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { UserviewComponent } from './userview/userview.component';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,17 @@ import { LoginComponent } from './login/login.component';
     EmployeeDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    UserviewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
