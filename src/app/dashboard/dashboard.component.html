@@ -2,14 +2,15 @@
 <nav>
   <a routerLink = "/dashboard">Dashboard</a>
   <a routerLink = "/employees">Employees</a>
+  <a class = "right" routerLink = "/login">Logout</a>
 </nav>
  
  <h3>Top Cricketers</h3>
 
-<div class="grid grid-pad">
-  <a *ngFor="let employee of employees" class="col-1-4" routerLink = "/detail/{{employee.id}}">
-    <div class="module hero">
-      <h4>{{employee.name}}</h4>
+<div class="grid grid-pad"> 
+  <div class="card" *ngFor="let cricketer of cricketers" class="col-1-4">
+    <img src={{cricketer.img}} class="card-img-top" alt="...">
+    <div class="card-body">      
+      <a routerLink = "/detail/{{cricketer.id}}" class="btn btn-primary">{{cricketer.name}}</a>    
     </div>
-  </a>
 </div>
