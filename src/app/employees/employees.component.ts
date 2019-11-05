@@ -8,10 +8,7 @@ import {EmployeeService} from '../employee.service';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
-//selectedEmployee: Employee;
-//onSelect(employee:Employee):void{          // Dead
-//  this.selectedEmployee = employee;
-//}
+
 employees: Employee[];
   constructor(private employeeService: EmployeeService) { }
 
@@ -24,7 +21,17 @@ employees: Employee[];
     this.getEmployees();
   }
   
-
-
+  delete(employee: Employee): void {
+    this.employees = this.employees.filter(e => e !== employee);
+    this.employeeService.deleteEmployee(employee).subscribe();
+  }
+  add(name: string): void {
+    name = name.trim();
+    if (!name ) { return; }
+    this.employeeService.addEmployee({ name } as Employee)
+      .subscribe(employee => {
+        this.employees.push(employee);
+      });
+  }
 }
 
