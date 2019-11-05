@@ -25,8 +25,14 @@ export class EmployeeDetailComponent implements OnInit {
     const id = +this.route.snapshot.paramMap.get('id');
     this.employeeService.getEmployee(id).subscribe(employee => this.employee = employee);
   }
-  goBack(): void {
+  goBack()
+  {
     this.location.back();
+  }
+
+  save(): void {
+    this.employeeService.updateEmployee(this.employee)
+      .subscribe(() => this.goBack());
   }
   }
 
