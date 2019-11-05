@@ -1,21 +1,30 @@
 <div>
-    <img src="https://i.pinimg.com/originals/7c/47/78/7c4778d02e05d5e4d52d2eaa1807d91f.jpg" alt="bcci">
+    <img class= "bcci" src="https://logos-download.com/wp-content/uploads/2016/10/BCCI_logo.png" alt="bcci">
     
 </div>
 
 <h1 class="heading">Welcome to Indian Cricket Board</h1>
-<div class="log" ><h1><b>Login</b></h1></div>
 
 
-<form #loginpage="ngForm" (ngSubmit)= "onSubmit(loginpage)" class="form-signin" >
-       
+<div class="login">
+	<h1>Login</h1>
+    <form method="post" #loginpage="ngForm" (ngSubmit)= "onSubmit(loginpage)" class="form-signin">
+    	<input type="text" name="Username" placeholder="Username" required="required" [(ngModel)]="empLogin.username" #nameField= "ngModel" />
+        <input type="password" name="Password" placeholder="Password" [(ngModel)]="empLogin.password" #nameField= "ngModel" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+    </form>
+</div>
+
+
+<!--<form #loginpage="ngForm" (ngSubmit)= "onSubmit(loginpage)" class="form-signin">       
         
         <label for="inputEmail" class="sr-only">Username</label>
         <input type="text" id="inputUsername" name= "Username" class="form-control" [(ngModel)]="empLogin.username" placeholder="Enter Username" required="" #nameField= "ngModel" autofocus="">
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" name="Password" class="form-control" [(ngModel)]="empLogin.password" placeholder="Enter Password" #nameField= "ngModel" required="">
-        
-        <button type="submit" class="btn btn-success">Login</button>        
- </form>
+       
+        <button type="submit" class="btn btn-success">Login</button>  -->
+              
+ 
     
  
