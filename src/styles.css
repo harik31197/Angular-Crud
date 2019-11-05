@@ -13,6 +13,12 @@ h1 {
   body {
     margin: 2em;
     background-color: skyblue;
+    background-image:  url("https://i.pinimg.com/originals/f4/0c/fe/f40cfef2ef26c8f87ea65894d0ba41d7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;    
+    overflow-x: hidden;
   }
   body, input[type="text"], button {
     color: #333;
@@ -20,6 +26,6 @@ h1 {
   }
 
   /* everywhere else */
-  * {
+  *{
     font-family: Arial, Helvetica, sans-serif;
   }
