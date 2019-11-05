@@ -8,7 +8,7 @@ import {EmployeeService} from '../employee.service'
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  employees: Employee[] = [];
+  cricketers: Employee[] = [];
 
   constructor(private employeeService: EmployeeService) { }
 
@@ -16,6 +16,10 @@ export class DashboardComponent implements OnInit {
     this.getEmployees();
   }
 getEmployees():void {
-  this.employeeService.getEmployees().subscribe(employees =>this.employees = employees.slice(1,5));
+  this.employeeService.getEmployees().subscribe(employees =>{
+    this.cricketers=employees.slice(0,5);
+    console.log(employees);
+  }
+  );
 }
 }
