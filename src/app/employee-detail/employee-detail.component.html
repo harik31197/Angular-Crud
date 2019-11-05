@@ -1,10 +1,28 @@
+<nav>
+                <a routerLink = "/dashboard">Dashboard</a>
+                <a routerLink = "/employees">Employees</a>
+                
+              </nav>
+
 <div *ngIf = "employee">
 
-    <h2>{{employee.name | uppercase}}'S Details</h2>
+    <h2><b>{{employee.name | uppercase}}'S Details</b></h2>    
     <div class="container">
-            <div><span>Id: </span>{{employee.id}}</div>
-            <div><label>Name:<input [(ngModel)]="employee.name" placeholder="name"/></label></div>
+            <div class="labels"><span><b>Id:</b></span>{{employee.id}}</div>
+            <div class="labels"><label><b>Name:</b><input [(ngModel)]="employee.name" placeholder="name"/></label></div>
+            <div class="btn">
+                        <button id = "goback" type="button" (click) = "goBack()" class="btn btn-primary">Go Back</button>
+                        <button id = "save" type="button" (click) = "save()" class="btn btn-primary">Save</button>
+              </div>    
+              <aside class="right">
+                        <img id="profile" src={{employee.img}} alt={{employee.name}}>
+                </aside>               
     </div> 
-   <div class="btn">
-    <button (click)="goBack()">Go Back</button>
-   </div>
+    
+    <div>
+            <img src="http://www.cricbuzz.com/i/stats/f/320x200//series/images/415.jpg" alt="2007">
+            <img src="https://images.indianexpress.com/2018/04/2011worldcup-m.jpg?w=759" alt="2011">
+            <img src="https://icc-static-files.s3.amazonaws.com/ICC/photo/2018/06/22/7adf581c-4b85-4fef-af68-0e476de7fede/India.jpg" alt="1983">
+            <img src="https://statics.sportskeeda.com/wp-content/uploads/2017/06/ct-1498194622-800.jpg" alt="2013">
+    </div>
+   
