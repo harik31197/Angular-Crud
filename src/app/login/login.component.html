@@ -1,14 +1,21 @@
+<div>
+    <img src="https://i.pinimg.com/originals/7c/47/78/7c4778d02e05d5e4d52d2eaa1807d91f.jpg" alt="bcci">
+    
+</div>
 
-<form (submit)="loginUser($event)">
-        <div class="input">
-            <label>Username</label>
-            <input class = "txt" type="text">
-        </div>
-        <div class="input">
-            <label>Password</label>
-            <input class = "txt" type="password">
-        </div>
-        <div class="input">
-            <input type="submit" value="Login">
-        </div>
-    </form>
+<h1 class="heading">Welcome to Indian Cricket Board</h1>
+<div class="log" ><h1><b>Login</b></h1></div>
+
+
+<form #loginpage="ngForm" (ngSubmit)= "onSubmit(loginpage)" class="form-signin" >
+       
+        
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" id="inputUsername" name= "Username" class="form-control" [(ngModel)]="empLogin.username" placeholder="Enter Username" required="" #nameField= "ngModel" autofocus="">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" name="Password" class="form-control" [(ngModel)]="empLogin.password" placeholder="Enter Password" #nameField= "ngModel" required="">
+        
+        <button type="submit" class="btn btn-success">Login</button>        
+ </form>
+    
+ 
