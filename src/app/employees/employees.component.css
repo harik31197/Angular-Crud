@@ -9,7 +9,8 @@
     padding: 0;
     width: 15em;
   }
-  nav a {
+
+  /*nav a {
     margin-left: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px 15px;
@@ -19,18 +20,7 @@
     background-color: #eee;
     border-radius: 50px;
   }
-  .right
-  {
-    float: right;
-    cursor: pointer;
-  }
-  .right:hover
-  {
-    color: #039be5;
-    background-color: #cfd8dc;
-
-  }
-  nav a:visited, a:link {
+    nav a:visited, a:link {
     color: #334953;
   }
   nav a:hover
@@ -42,6 +32,19 @@
 {
     color: #039be5;  
 }
+  */
+  .right
+  {
+    float: right;
+    cursor: pointer;
+  }
+  .right:hover
+  {
+    color: #039be5;
+    background-color: #cfd8dc;
+
+  }
+
   h2
   {
     margin-left: 50px;
@@ -72,13 +75,7 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
-  a
-  {
-      color: black;
-      font-size: 1em;
-      text-decoration: none;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+ 
   button.delete {
     position: relative;
     left: 194px;
@@ -119,3 +116,4 @@
   color: whitesmoke;
   border-radius: 20%;
 }
+
