@@ -8,8 +8,14 @@
     padding-right: 0;
   }
   a {
+    margin-left: 20px;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .right
+  {
+    float: right;
+        
   }
   *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -36,9 +42,10 @@
     width: 25%;
   }
   .module {
-    padding: 20px;
+    padding: 25px;
+    
     text-align: center;
-    color:  #607d8b;
+    color:  #ecf0f1;
     max-height: 120px;
     min-width: 120px;
     background-color: white;
@@ -89,4 +96,28 @@
   nav a.active
 {
     color: #039be5;  
+}
+
+img
+{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.col-1-4
+{
+height: 260px;
+width: 260px;
+}
+.card-title
+{
+  color: #334953;
+  margin-left: 60px;
+
+}
+.card-body
+{
+  margin-left:35px;
 }
