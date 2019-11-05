@@ -93,13 +93,29 @@
     position: relative;
     left: 194px;
     top: -32px;
-    background-color: rgb(230, 226, 17) !important;
+    background-color: rgb(240, 188, 20) !important;
     color: rgb(17, 16, 16);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top:-5px;
     
   }
 .del
 {
   position: relative;
+}
+.add
+{
+  position: relative;
+  top: 200px;
+  left:80px;
+}
+.addPlayer
+{
+  color: whitesmoke;
+}
+.add button
+{
+  background-color: rgb(26, 128, 0);
+  color: whitesmoke;
+  border-radius: 20%;
 }
