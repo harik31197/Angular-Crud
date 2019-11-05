@@ -1,36 +1,59 @@
 :host {
-	flex-grow: 1;
+	flex-grow: 10;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-div.input 
+form
 {
-    position: relative;
-    padding:15px;
+max-width: 250px;
+transform: translate(-210%,210%);
 }
 
-div.input label
+label
 {
-	position: absolute;
-	top: 0;
-	transform: translateY(-50%);
-	left: 10px;	
-	padding: 2px 2px;
+	padding: 150px;
+	
 }
+h1
+{
+	color: rgb(250, 246, 246);
+	font-size: 40px;
+	margin-left: 20%; 	
+	position: relative;
+	text-align: center;
+	transform: translate(-65%,380%);
+	
+}
+button
+{
+	padding:5px 10px;
+	margin-left: 5.6em;
+	margin-top: 1em; 
+	background-color: navy;
+}
+img
+{
+	height: 100px;
+	width: 100px;
+	border-radius: 60%;
+	float: left;
+	position: relative;
+	right: 25%;
+	margin-top: -50px;	
+}
+.heading
+{
+	position: relative;
+	left: 30%;
+	margin-top: -420px;
+	color: whitesmoke;
+	
 
-div.input input {
-	padding: 1px 5px;
-	font-size: 20px;
-	outline: 0;
 }
-
-div.input
-{
-	margin-top: 25px;
-}
-.txt
-{
-    width: 10em;
+.log
+{	position: relative;
+	right:25%;
+	font-weight: bolder 200;
 }
