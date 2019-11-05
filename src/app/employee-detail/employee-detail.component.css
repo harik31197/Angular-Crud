@@ -27,7 +27,7 @@ h2{
     right: 5%;
     
     background-color: rgb(255, 255, 255);
-    border-radius: 5% 5% 30% 30%; 
+    border-radius: 20% 20% 20% 20%; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 5px solid black;
        
@@ -71,7 +71,7 @@ img
    
 
 }
-nav a {
+/*nav a {
     margin-left: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px 15px;
@@ -92,4 +92,4 @@ nav a:visited, a:link {
   nav a.active
 {
     color: #039be5;  
-}
+}*/
