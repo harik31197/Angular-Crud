@@ -1,11 +1,30 @@
 <h1>{{title}}</h1>
-<nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><b>BCCI</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" routerLink = "/dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink = "/employees" >Cricketer</a>
+      </li>
+      <li class="nav-item" id="logout">
+        <a class="nav-link"  routerLink = "/login">Logout</a>
+      </li>
+      </ul>
+  </div>
+</nav>
+<!--<nav>
   <a routerLink = "/dashboard">Dashboard</a>
   <a routerLink = "/employees">Employees</a>
   <a class = "right" routerLink = "/login">Logout</a>
-</nav>
+</nav> -->
  
- <h3>Top Cricketers</h3>
+ <h3><b>Top Cricketers</b></h3>
 
 <div class="grid grid-pad"> 
   <div class="card" *ngFor="let cricketer of cricketers" class="col-1-4">
