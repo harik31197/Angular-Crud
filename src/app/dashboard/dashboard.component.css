@@ -53,6 +53,7 @@
 h3
 {
   color: whitesmoke;
+  margin-top:35px;
 }
 img
 {
@@ -60,6 +61,7 @@ img
   width: 200px;
   border-radius: 20px;
   border: 5px solid rgb(255, 255, 255);
+  margin-top:40px;
 }
 
 .col-1-4
@@ -71,6 +73,7 @@ width: 260px;
 {
   color: #334953;
   margin-left: 60px;
+ 
 
 }
 .card-body
