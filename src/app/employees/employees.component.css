@@ -48,6 +48,7 @@
   h2
   {
     margin-left: 50px;
+    color: whitesmoke;
   }
   .employees li {
    
@@ -116,4 +117,8 @@
   color: whitesmoke;
   border-radius: 20%;
 }
-
+.nav a.active {
+  background-color: #f7f8fa;
+  color: #019fc2;
+  cursor: default;
+}
