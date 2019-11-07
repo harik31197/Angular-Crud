@@ -21,20 +21,20 @@ h2{
 .container
 {
     height: 250px;
-    width: 300px;
+    width: 225px;
    position: relative;
     padding:15px 15px;
     right: 5%;
     
-    background-color: rgb(255, 255, 255);
-    border-radius: 20% 20% 20% 20%; 
+    background-color: rgb(111, 186, 221);
+    border-radius:10%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 5px solid black;
        
 }
 .btn
 {
-    margin-left: 5px;
+    margin-left: 1px;
 }
 .labels
 {
@@ -42,7 +42,7 @@ h2{
 }
 input
 {
-    width:120px;
+    width:150px;
     border: 2px solid black;
 
 }
@@ -70,6 +70,10 @@ img
     border: 5px solid goldenrod;
    
 
+}
+.nav-link.active
+{
+    color: #039be5;  
 }
 /*nav a {
     margin-left: 20px;
